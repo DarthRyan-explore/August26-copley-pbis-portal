@@ -90,12 +90,12 @@
         <div class="flex items-center gap-3 pt-1 flex-wrap">
           <button id="activeWeekInspectBtn" onclick="openActiveWeekModal()" class="inline-flex items-center gap-2 bg-copley-gold hover:bg-copley-goldLight text-copley-blue text-xs font-black px-4 py-2 rounded-xl transition shadow-md">
             <i class="fa-solid fa-layer-group"></i>
-            <span>View Full Guidance Specs for This Week</span>
+            <span>View Guidance Specs for This Week</span>
           </button>
           <div id="activeWeekVideoArea" class="hidden">
             <a id="activeWeekVideoBtn" href="#" target="_blank" class="inline-flex items-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold px-4 py-2 rounded-xl transition shadow-md">
               <i class="fa-solid fa-circle-play"></i>
-              <span>Watch Safety Video</span>
+              <span>Watch Required Safety Video</span>
             </a>
           </div>
         </div>
@@ -145,6 +145,27 @@
       </div>
 
       <div class="p-6 overflow-y-auto custom-scrollbar space-y-5 text-xs">
+
+        <!-- Videos & Required Media Callouts -->
+        <div id="modalVideosSection" class="grid grid-cols-1 sm:grid-cols-2 gap-3 hidden">
+          <div id="modalStateVideoBox" class="bg-rose-50 border border-rose-200 p-3.5 rounded-2xl space-y-1 hidden">
+            <span class="text-[10px] font-black uppercase text-rose-800 tracking-wider flex items-center gap-1.5">
+              <i class="fa-solid fa-shield-halved text-rose-600"></i> State Required Video
+            </span>
+            <a id="modalStateVideoLink" href="#" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-bold text-rose-700 hover:underline pt-1">
+              <i class="fa-solid fa-circle-play"></i> Watch Required Safety Video
+            </a>
+          </div>
+
+          <div id="modalPbisVideoBox" class="bg-copley-blue/5 border border-copley-blue/20 p-3.5 rounded-2xl space-y-1 hidden">
+            <span class="text-[10px] font-black uppercase text-copley-blue tracking-wider flex items-center gap-1.5">
+              <i class="fa-solid fa-video text-copley-gold"></i> PBIS Location Video Release
+            </span>
+            <p id="modalPbisVideoTitle" class="text-xs font-bold text-copley-blue"></p>
+            <p id="modalPbisVideoStep" class="text-[11px] text-slate-600 italic"></p>
+          </div>
+        </div>
+
         <!-- Communication Tracks -->
         <div class="space-y-3">
           <h4 class="text-xs font-black uppercase tracking-wider text-slate-400">Guidance Communication Tracks</h4>
@@ -180,7 +201,7 @@
             <i class="fa-solid fa-brain text-amber-600"></i> Tier 2 DBT Group On-Ramp Active
           </span>
           <p class="text-xs text-amber-900 font-medium leading-relaxed">
-            Active referral window for Ryan Lawrence & Amy's Wednesday Learning Lab DBT Skills Group. Check student referrals (BIMAS / Counselor sign-ins) and distribute parent consent packets.
+            Active referral window for Ryan Lawrence & Amy's Wednesday Learning Lab DBT Skills Group. Check student referrals (BIMAS screener / counselor sign-ins) and distribute parent consent packets.
           </p>
         </div>
 
@@ -1234,6 +1255,8 @@ const DEFAULT_MATRIX = [
         familyPrompt: m.Family_Prompt || m.familyPrompt || '',
         prepSupplies: m.Prep_Supplies || m.prepSupplies || '',
         stateRequiredVideo: m.State_Required_Video || m.stateRequiredVideo || '',
+        pbisVideo: m.PBIS_Video || m.pbisVideo || '',
+        pbisVideoStep: m.PBIS_Video_Step || m.pbisVideoStep || '',
         isDbtWeek: DBT_WEEKS.includes(wNum)
       };
     });
@@ -1280,6 +1303,8 @@ const DEFAULT_MATRIX = [
               <div class="flex gap-1.5 flex-wrap pt-1">
                 <span class="${pillarColor} text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider">${item.pillar}</span>
                 ${item.casel ? `<span class="bg-slate-100 text-slate-700 text-[9px] font-bold px-2.5 py-1 rounded-lg">${item.casel}</span>` : ''}
+                ${item.pbisVideo ? `<span class="bg-copley-blue/10 text-copley-blue text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1"><i class="fa-solid fa-video text-[8px]"></i> ${item.pbisVideo.split(':')[0]}</span>` : ''}
+                ${item.stateRequiredVideo ? `<span class="bg-rose-100 text-rose-800 text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1"><i class="fa-solid fa-shield-halved text-[8px]"></i> Safety Video</span>` : ''}
                 ${item.isDbtWeek ? `<span class="bg-amber-400 text-slate-950 text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1 shadow-sm"><i class="fa-solid fa-brain text-[8px]"></i> DBT On-Ramp</span>` : ''}
               </div>
 
@@ -1354,6 +1379,36 @@ const DEFAULT_MATRIX = [
       document.getElementById('modalFamilyPrompt').textContent = item.familyPrompt || 'No family prompt set.';
       document.getElementById('modalPrepSupplies').textContent = item.prepSupplies || 'None specified.';
 
+      // Videos section
+      const videosSection = document.getElementById('modalVideosSection');
+      const stateBox = document.getElementById('modalStateVideoBox');
+      const stateLink = document.getElementById('modalStateVideoLink');
+      const pbisBox = document.getElementById('modalPbisVideoBox');
+      const pbisTitle = document.getElementById('modalPbisVideoTitle');
+      const pbisStep = document.getElementById('modalPbisVideoStep');
+
+      let hasVideo = false;
+
+      if (item.stateRequiredVideo) {
+        stateLink.href = item.stateRequiredVideo;
+        stateBox.classList.remove('hidden');
+        hasVideo = true;
+      } else {
+        stateBox.classList.add('hidden');
+      }
+
+      if (item.pbisVideo) {
+        pbisTitle.textContent = item.pbisVideo;
+        pbisStep.textContent = item.pbisVideoStep || '';
+        pbisBox.classList.remove('hidden');
+        hasVideo = true;
+      } else {
+        pbisBox.classList.add('hidden');
+      }
+
+      if (hasVideo) videosSection.classList.remove('hidden');
+      else videosSection.classList.add('hidden');
+
       const dbtSection = document.getElementById('modalDbtSection');
       if (item.isDbtWeek) {
         dbtSection.classList.remove('hidden');
@@ -1423,7 +1478,7 @@ const DEFAULT_MATRIX = [
           if (l === loc) {
             btn.className = "bg-copley-blue text-copley-gold p-2 rounded-xl text-[10px] font-black uppercase text-center tracking-wider transition shadow-sm border border-copley-gold/30";
           } else {
-            btn.className = "bg-slate-100 text-slate-600 hover:bg-slate-200 p-2 rounded-xl text-[10px] font-black uppercase text-center tracking-wider transition border border-slate-200";
+            btn.className = "bg-slate-100 text-slate-600 hover:bg-slate-200 font-bold text-xs px-3.5 py-1.5 rounded-xl transition border border-slate-200";
           }
         }
       });
@@ -1480,6 +1535,8 @@ const DEFAULT_MATRIX = [
                 familyPrompt: m.Family_Prompt || m.familyPrompt || '',
                 prepSupplies: m.Prep_Supplies || m.prepSupplies || '',
                 stateRequiredVideo: m.State_Required_Video || m.stateRequiredVideo || '',
+                pbisVideo: m.PBIS_Video || m.pbisVideo || '',
+                pbisVideoStep: m.PBIS_Video_Step || m.pbisVideoStep || '',
                 isDbtWeek: DBT_WEEKS.includes(wNum)
               };
             });

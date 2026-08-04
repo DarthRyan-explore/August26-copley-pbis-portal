@@ -166,6 +166,14 @@
           </div>
         </div>
 
+        <!-- Guidance Department Action Specs -->
+        <div id="modalGuidanceSection" class="bg-amber-50/90 border border-amber-200 p-4 rounded-2xl space-y-1.5 hidden shadow-xs">
+          <span class="text-[10px] font-black uppercase text-amber-950 tracking-wider flex items-center gap-1.5 font-heading">
+            <i class="fa-solid fa-compass text-amber-600"></i> Guidance Department Action & Program Specs
+          </span>
+          <p id="modalGuidanceText" class="text-xs text-amber-950 font-bold leading-relaxed bg-white/90 p-3 rounded-xl border border-amber-200/60 whitespace-pre-line"></p>
+        </div>
+
         <!-- Communication Tracks -->
         <div class="space-y-3">
           <h4 class="text-xs font-black uppercase tracking-wider text-slate-400">Guidance Communication Tracks</h4>
@@ -301,18 +309,19 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "This week establishes foundational behavioral norms for entering and exiting the building. It clarifies that a successful community relies on everyone understanding structural flow. Key concepts: arrival protocols, respectful corridor passing, and locker setup routines.",
         "Student_Tip":  "Welcome to Copley High. Or as some of you might call it, \u0027The End of Summer Freedom.\u0027 Look, let\u0027s establish a baseline: Copley has linear time, not \u0027vibes\u0027. You can\u0027t start your morning walk to class five minutes after the bell rings and expect the laws of physics to bend for you. Check out our student arrival video and let\u0027s avoid moving like zombies in search of a brain during transitions.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "Welcome back! The freshman hallway is a highway, not a parking lot. Keep moving on the right.",
+        "TV_Slide_Text":  "All quicksand and red Mario Kart shells have been removed from local roads. Keep moving in the hallways—physics still applies",
         "TV_Slide_Approved":  "No",
-        "Family_Prompt":  "Ask your child what specific arrival/dismissal flow rules were highlighted during their class meetings.",
-        "Staff_Data":  "Please project \u0027Video 2: Arrival \u0026 Dismissal\u0027 on your classroom screens during Learning Lab on Wednesday.",
+        "Family_Prompt":  "Instead of asking \u0027How was school?\u0027 (which gets you a grunt), try asking: \u0027What\u0027s one thing we can prep tonight so tomorrow morning doesn\u0027t feel like a high-stakes obstacle course?\u0027",
+        "Staff_Data":  "Focus: Low-stakes community building and arrival routines. Please project \u0027Video 2: Arrival \u0026 Dismissal\u0027 during Learning Lab on Wednesday. Monitor hallway flow.",
         "PBIS_Video":  "Video 2: Arrival \u0026 Dismissal",
-        "PBIS_Video_Step":  "Intro and classroom launch. Play video in class meetings to establish arrival/dismissal flow expectations.",
+        "PBIS_Video_Step":  "classroom PBIS Video.",
         "Is_Blackout":  "FALSE",
-        "Prep_Supplies":  "Flyers with direct bookmark URLs for the Freshman Counseling sign-up portal (distribute in L-Lab).",
-        "Prep_Recruitment":  "Link Crew: Active at lockers to guide freshman groups. Improv Club: Ready with a brief hallway skit during L-Lab.",
+        "Prep_Supplies":  "",
+        "Prep_Recruitment":  "",
         "Prep_Slide_Spec":  "Dark Navy background with Gold text: \u0027Welcome back! The freshman hallway is a highway, not a parking lot. Keep moving on the right. Video 2 looping.\u0027",
         "Ryan_Notes":  "TV Slide Text -\"freshmen hallway\" is too specific. More general, if anything.... just \"the hallways\" And, I honestly still don\u0027t like it. Still condescending to HS students, expecially for week 1. More snark or sarcasm? Maybe more about getting to school on time or getting to class on time. Maybe the zombie thing? Or, \"All Quicksand has been removed from hallways to allow for timely arrival to classes\" or \"Red Turtle shells have been removed from local roads to promote timely arrival to school\" Something like that. We can\u0027t preach to these students. \nThe family prompt is worthless. That is garbage. No parent is going to have a conversation with their kid about dismissal flow rules. Fix it. Maybe it could be about setting the next morning up to make it less stressful for getting ready and to school. "
     },
@@ -326,16 +335,17 @@ const DEFAULT_MATRIX = [
         "Pillar":  "Self-Managed",
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Focuses on the mechanical habits of dependability. Timeless figures like George Washington were strict on punctuality because lateness directly subtracts respect from others. Establishing predictable daily routines prevents decision fatigue.",
-        "Student_Tip":  "Routines are highly recommended. They are that thing that keeps you moving forward while you decide whether to brush your hair. Let\u0027s make it to class before the second bell. Your teachers really don\u0027t like giving you the \u0027disappointed sigh\u0027 when you open the classroom door late.",
+        "Student_Tip":  "Routines are highly recommended. They are the magical autopilot system that keeps you moving forward while you decide whether to actually brush your hair. Let\u0027s make it to class before the second bell. Your teachers really don\u0027t enjoy giving you that heavy, soul-crushing \u0027disappointed sigh\u0027 when you walk in late.",
+        "Guidance_Program_Action":  "September Guidance Window:\n\n12th Grade Breakout Groups: SchooLinks Managing college applications \u0026 career planning (small groups over 3 days), Senior packets \u0026 folders\n12th Grade Large Group: College \u0026 Career Planning Presentation\n9th Grade Freshman Success Guidance Lessons\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
         "TV_Slide_Text":  "Being late is simply telling someone else that your time is more valuable than theirs. Tweak your morning countdown.",
         "TV_Slide_Approved":  "No",
-        "Family_Prompt":  "Discuss the \u0027Time Machine\u0027 concepts of dependability. Work together on establishing an offline morning checklist.",
+        "Family_Prompt":  "Ask your teen: \u0027If you could eliminate 15 minutes of frantic morning chaos tomorrow, what\u0027s one decision you could make the night before?\u0027",
         "Staff_Data":  "Monitor tardies closely this week. Let\u0027s establish a firm, consistent baseline for student arrival routines.",
-        "PBIS_Video":  "Video 2: Arrival \u0026 Dismissal",
-        "PBIS_Video_Step":  "Audit and address late-arrival bottlenecks near entrance halls.",
+        "PBIS_Video":  "Backup Video 2: Arrival \u0026 Dismissal",
+        "PBIS_Video_Step":  "Note: Audit and address late-arrival bottlenecks near entrance halls.",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Senior folders and 50 copies of Chronically Late personality sheets.",
         "Prep_Recruitment":  "National Honor Society: Help counselors deliver Senior Folders directly to twelfth-grade Learning Lab advisories.",
@@ -353,12 +363,13 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Explores the psychological benefits of purpose. True goal setting is not just about making grades, but discovering what brings authentic meaning and energy to your life. Purpose reduces anxiety and builds intrinsic focus.",
         "Student_Tip":  "Goals. No, not the ones we block on the soccer field. Life goals. If you\u0027re running on autopilot just trying to survive until Friday, you\u0027re doing it wrong. Find one thing this semester you actually want to master. No grades attached.",
+        "Guidance_Program_Action":  "September Guidance Window:\n\n12th Grade Breakout Groups: SchooLinks Managing college applications \u0026 career planning (small groups over 3 days), Senior packets \u0026 folders\n12th Grade Large Group: College \u0026 Career Planning Presentation\n9th Grade Freshman Success Guidance Lessons\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
         "TV_Slide_Text":  "If your only goal is surviving until Friday at 2:30 PM, you\u0027ve found the cheat code to never failing. Of course, you\u0027ll never succeed either, but that\u0027s probably overrated.",
         "TV_Slide_Approved":  "No",
-        "Family_Prompt":  "Help your child discover what they are passionate about. Ask: \u0027What is one project or hobby you\u0027d do even if you didn\u0027t get a grade for it?\u0027",
+        "Family_Prompt":  "Try asking: \u0027What is one project, hobby, or topic right now that you\u0027d spend hours on even if no one was grading you?\u0027",
         "Staff_Data":  "Support students during Learning Lab as they map out their first academic and wellness goal. Prompt them on what drives their focus.",
         "PBIS_Video":  "None",
         "PBIS_Video_Step":  "None",
@@ -379,11 +390,12 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Translates high-level purpose into everyday action. Explains that goals fail without micro-steps. Focuses on the incremental compound effect: achieving large goals by mastering the immediate day\u0027s tasks.",
         "Student_Tip":  "Big dreams are wonderful. But they also terrify your brain. Break them down into ridiculous, daily micro-steps. Treat your week like a pizza: don\u0027t attempt to swallow the whole thing in one bite. Also, our Tier 2 DBT Skills Group starts next Wednesday in L-Lab. Talk to Mr. Lawrence or Mrs. Gray for a quick onboarding slot.",
+        "Guidance_Program_Action":  "September Guidance Window:\n\n12th Grade Breakout Groups: SchooLinks Managing college applications \u0026 career planning (small groups over 3 days), Senior packets \u0026 folders\n12th Grade Large Group: College \u0026 Career Planning Presentation\n9th Grade Freshman Success Guidance Lessons\nDBT On-Ramp Week",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
-        "State_Required_Video":  "Violence Prevention \u0026 Anonymous Reporting Video (Mods 5-6)",
-        "TV_Slide_Text":  "A goal without a plan is just a wish. Stop staring at the mountain; break it into micro-steps. Learn the 2-minute Eisenhower trick: tinyurl.com/EisenhowerCHS",
-        "TV_Slide_Approved":  "No",
+        "State_Required_Video":  "",
+        "TV_Slide_Text":  "A goal without a plan is just a wish. Stop staring at the mountain; break it into micro-steps. Learn the 2-minute Eisenhower trick.",
+        "TV_Slide_Approved":  "Yes",
         "Family_Prompt":  "Encourage a growth mindset. Help your student break down a massive goal into simple weekly micro-steps.",
         "Staff_Data":  "Short week. Re-engage goals started last week during student-led check-ins.",
         "PBIS_Video":  "None",
@@ -391,7 +403,7 @@ const DEFAULT_MATRIX = [
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Whiteboard markers for LL rooms. 20 DBT Consent Forms printed at the counseling desk.",
         "Prep_Recruitment":  "Key Club: Set up a planning and time-management workshop sheet in L-Labs.",
-        "Prep_Slide_Spec":  "Whiteboard design: \u0027A goal without a plan is just a wish. Learn the 2-minute Eisenhower trick to run your day: tinyurl.com/EisenhowerCHS\u0027",
+        "Prep_Slide_Spec":  "Whiteboard design: \u0027A goal without a plan is just a wish. Learn the 2-minute Eisenhower trick to run your day.",
         "Ryan_Notes":  "\"Mrs. Gray\" should be changed to \"Mrs. Gray.\" Amy is her first name. Apply that to any other instances in this csv. \nTV slide shouldn\u0027t tell the students to try the eisenhower matrix on their LL whiteboard. They can try it on their own. And we should find a way to provide a link for students on some video for this. Some youtube basic video on the eisenhower matrix. How can we do that? Will it work?"
     },
     {
@@ -404,16 +416,17 @@ const DEFAULT_MATRIX = [
         "Pillar":  "Civil",
         "CASEL_Standard":  "Social Awareness",
         "Concept_Meaning":  "Defines the fundamental civil contract of shared school environments — hallways, commons, buses, and cafeteria. Focuses on how noise levels, clutter, and basic manners affect the entire community.",
-        "Student_Tip":  "Let\u0027s talk about shared spaces. The hallways, buses, and commons are shared community areas, not your personal living room. Keep the volume at a level that doesn\u0027t trigger a migraine for everyone else, and pack out whatever trash you pack in. It\u0027s just basic decency.",
+        "Student_Tip":  "The commons, hallways, and buses are shared community spaces—not your personal living room or private soundstage. Keep your volume at a level that doesn\u0027t trigger a collective migraine for everyone within 50 feet, and clean up your own trash. Basic civility makes life better for literally everyone.",
+        "Guidance_Program_Action":  "September Guidance Window:\n\n12th Grade Breakout Groups: SchooLinks Managing college applications \u0026 career planning (small groups over 3 days), Senior packets \u0026 folders\n12th Grade Large Group: College \u0026 Career Planning Presentation\n9th Grade Freshman Success Guidance Lessons\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
         "TV_Slide_Text":  "Our shared spaces are a reflection of our student standard. Keep it clean, keep the volume reasonable, and respect the community.",
         "TV_Slide_Approved":  "No",
-        "Family_Prompt":  "Ask your student: \u0027What is one thing that makes shared spaces at school (like the commons or hallways) stressful, and how can students make them better?\u0027",
+        "Family_Prompt":  "Ask your high schooler: \u0027What\u0027s the most annoying thing people do in shared spaces like the commons or cafeteria, and how do you handle it?",
         "Staff_Data":  "Play Video 1: The Bus in your advisories on Thursday. Highlight civil conduct on school vehicles.",
         "PBIS_Video":  "Video 1: The Bus",
-        "PBIS_Video_Step":  "Deployment of Bus standards. Review behavior expectations with bus riders.",
+        "PBIS_Video_Step":  "Bus PBIS Video ",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "30 Golden Bus incentive tickets to distribute to bus drivers.",
         "Prep_Recruitment":  "Link Crew: Highlight bus expectations to freshman mods during advisory checks.",
@@ -430,16 +443,17 @@ const DEFAULT_MATRIX = [
         "Pillar":  "Civil",
         "CASEL_Standard":  "Relationship Skills",
         "Concept_Meaning":  "Extends civil behaviors to collaboration and accountability. Focuses on peer accountability models: how to politely ask a peer to pick up trash, reduce hallway blocking, or maintain standard behaviors in common areas.",
-        "Student_Tip":  "Peer accountability is a big phrase, but it basically means: if you see your buddy drop a plastic bottle like it\u0027s a hot potato, tell them to pick it up. Don\u0027t let our commons resemble a post-apocalyptic movie set.",
+        "Student_Tip":  "Peer accountability\" sounds like corporate speak, but it really just means: if you see your buddy drop a plastic wrapper like it\u0027s radioactive waste, tell them to pick it up. Don\u0027t let our commons turn into a post-apocalyptic movie set. Clean up after yourselves.",
+        "Guidance_Program_Action":  "October Guidance Window (Month-Long Focus):\n\n1:1 Senior \u0026 Counselor Meetings: Align student\u0027s career goals with their strengths and financial needs (Ongoing all month)\n10th Grade: SchooLinks \"Skills for Life\" Lesson Plan (Top Skills Assessment \u0026 Profile/Resume Build)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "Leave spaces cleaner than you found them. The Copley Commons is a reflection of our student standard.",
+        "TV_Slide_Text":  ": Leave spaces cleaner than you found them. The Copley Commons is a reflection of our student standard.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Discuss the division of chores at home. How can the principle of leaving shared spaces cleaner than we found them translate to your household?",
-        "Staff_Data":  "Nominate classrooms showing pristine civil maintenance for the weekly PBIS reward points.",
+        "Staff_Data":  "",
         "PBIS_Video":  "Video 1: The Bus",
-        "PBIS_Video_Step":  "Evaluate morning arrival bus loop flow.",
+        "PBIS_Video_Step":  "Note: Evaluate morning arrival bus loop flow.",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Advisory tally cards for clean classroom checks.",
         "Prep_Recruitment":  "Improv Club: Run brief lunchtime interactions modeling how to ask someone politely to clean up after themselves.",
@@ -457,13 +471,14 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Strips away the esoteric concepts of mindfulness to define it simply as focus training. Key points: your brain cannot multi-task. Mindfulness is the tactical ability to point your attention exactly where you want it.",
         "Student_Tip":  "Mindfulness. Stop rolling your eyes, it\u0027s not weird incense-burning stuff. It\u0027s just mental weightlifting for your focus muscle. Try taking three slow breaths before you walk into your hardest class. Watch how your brain reboots.",
+        "Guidance_Program_Action":  "October Guidance Window (Month-Long Focus):\n\n1:1 Senior \u0026 Counselor Meetings: Align student\u0027s career goals with their strengths and financial needs (Ongoing all month)\n10th Grade: SchooLinks \"Skills for Life\" Lesson Plan (Top Skills Assessment \u0026 Profile/Resume Build)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
         "TV_Slide_Text":  "Attention is your most valuable currency. Learn how to direct it.",
         "TV_Slide_Approved":  "No",
-        "Family_Prompt":  "Practicing presence: encourage your student to put away Chromebooks and screens during dinner to focus on offline connection.",
-        "Staff_Data":  "Lead a quick 1-minute box-breathing exercise at the start of your first-period class to enhance mental focus.",
+        "Family_Prompt":  "Try an offline reset: Challenge your teen to put phones in another room during dinner to test high-focus, distraction-free conversation.",
+        "Staff_Data":  "",
         "PBIS_Video":  "None",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
@@ -483,13 +498,14 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Focuses on identifying anxiety triggers. Teaches physical and psychological tools (the 5-4-3-2-1 technique, attentional deployment) to stay grounded during stressful testing seasons or complex social events.",
         "Student_Tip":  "Anxiety is that lovely voice in your head telling you the sky is falling. Usually, it\u0027s lying. If you are feeling overwhelmed, hit pause. Focus on 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste. Ground your processor.",
+        "Guidance_Program_Action":  "October Guidance Window (Month-Long Focus):\n\n1:1 Senior \u0026 Counselor Meetings: Align student\u0027s career goals with their strengths and financial needs (Ongoing all month)\n10th Grade: SchooLinks \"Skills for Life\" Lesson Plan (Top Skills Assessment \u0026 Profile/Resume Build)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
         "TV_Slide_Text":  "Anxiety happens. Learn the 5-4-3-2-1 sensory grounding method to reboot your brain.",
         "TV_Slide_Approved":  "No",
-        "Family_Prompt":  "Explore quiet habits. Consider signing up together for an offline mindfulness program, or take a peaceful 10-minute family walk.",
-        "Staff_Data":  "Notice highly anxious students prior to upcoming midterms. Connect them to the school support specialist.",
+        "Family_Prompt":  "Ask: \u0027When midterms or big deadlines loom, what\u0027s your physical warning sign that stress is building up, and how can I help",
+        "Staff_Data":  "Notice highly anxious students prior to upcoming midterms. Consider offering to help them connect them to the school support specialist",
         "PBIS_Video":  "None",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
@@ -509,6 +525,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Responsible Decision-Making",
         "Concept_Meaning":  "Consolidates Quarter 1 learning. Guides students through a self-audit of academic and behavioral progress. Emphasizes self-compassion alongside behavioral accountability.",
         "Student_Tip":  "Q1 is over. Time for a self-audit. Look back at the goals you set. If you failed, that\u0027s fine. If you succeeded, cool, keep pushing. Just don\u0027t lie to yourself about the results. Honorable reflections are how we actually level up.",
+        "Guidance_Program_Action":  "October Guidance Window (Month-Long Focus):\n\n1:1 Senior \u0026 Counselor Meetings: Align student\u0027s career goals with their strengths and financial needs (Ongoing all month)\n10th Grade: SchooLinks \"Skills for Life\" Lesson Plan (Top Skills Assessment \u0026 Profile/Resume Build)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -534,16 +551,17 @@ const DEFAULT_MATRIX = [
         "Pillar":  "Self-Managed",
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Focuses on optimizing common space habits and privacy expectations. Teaches standard restroom behaviors that preserve cleanliness, safety, and operational efficiency across the high school.",
-        "Student_Tip":  "Let\u0027s align on restrooms. It\u0027s a space for basic biology, not a lounge, a cafeteria, or a vaping station. Keep the floors dry, throw paper towels in the bin, and let\u0027s keep the hallways clear. We\u0027re all trying to get back to class in one piece.",
+        "Student_Tip":  " : Let\u0027s align on restrooms. It\u0027s a space for basic biology, not a lounge, a cafeteria, or a vaping station. Keep the floors dry, throw paper towels in the bin, and let\u0027s keep the hallways clear. We\u0027re all trying to get back to class in one piece.",
+        "Guidance_Program_Action":  "October Guidance Window (Month-Long Focus):\n\n1:1 Senior \u0026 Counselor Meetings: Align student\u0027s career goals with their strengths and financial needs (Ongoing all month)\n10th Grade: SchooLinks \"Skills for Life\" Lesson Plan (Top Skills Assessment \u0026 Profile/Resume Build)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "Restrooms: A sanctuary for basic biology, not a social lounge, a cafeteria, or a smoke shop. Keep it clean, keep it moving, and respect privacy.",
+        "TV_Slide_Text":  "Public Service Announcement: Restrooms are a sanctuary for basic biology, not a social lounge, a cafeteria, or a smoke shop. ",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "A high school checkpoint: Ask your student, \u0027Do you feel like you can use the restrooms in peace at school, or is it too crowded with social gatherings?\u0027",
         "Staff_Data":  "Project \u0027Video 3: Restrooms\u0027 in advisories. Reinforce restroom hall-pass guidelines.",
         "PBIS_Video":  "Video 3: The Restrooms",
-        "PBIS_Video_Step":  "Introduce restroom expectations. Focus on cleanliness, trash disposal, and respecting privacy.",
+        "PBIS_Video_Step":  "restroom PBIS Video. ",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Laminated restroom mirror reminder cards. SchooLinks access checklists.",
         "Prep_Recruitment":  "Key Club: Help hang laminated restroom reminder signs and stock lobby info desks.",
@@ -561,15 +579,16 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Analyzes the mechanics of emotional reactions. Connects physiological responses (heart racing, tight chest) with cognitive awareness. Asserts that triggers are real alerts, but never serve as excuses for poor actions.",
         "Student_Tip":  "Triggers exist. They are real. But they are not cosmic hall passes to act like a toddler throwing a fit. Learn to spot that exact moment your chest gets tight, pause, and make a logical choice before your amygdala hijacks your brain.",
+        "Guidance_Program_Action":  "November Guidance Window:\n\n11th Grade: SchooLinks Career Discovery Lesson (Explore Career Center, \"Would You Rather\" Assessment, Star/Save Careers)\n10th Grade: Four Cities Compact Showcase Field Trip\n9-12 Grades: Kindness Week! (Nov. 11 - Kindness pledge, bingo cards, stickers)\n11th \u0026 12th Grades: Presentation on Financial Aid \u0026 FAFSA application (Paying for college after HS with Kent State)\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
-        "State_Required_Video":  "",
+        "State_Required_Video":  "Tentative Say Something: Suicide Prevention Video (Mods 5-6)",
         "TV_Slide_Text":  "Feel your chest getting tight? That\u0027s a biological alert, not an excuse to explode. Pause and check your triggers.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Model emotional control at home. Say out loud: \u0027I am feeling overwhelmed, so I will take a quiet moment before we discuss this.\u0027",
         "Staff_Data":  "Integrate emotion regulation strategies into advisory periods. Encourage self-reflection prompts.",
         "PBIS_Video":  "Video 3: The Restrooms",
-        "PBIS_Video_Step":  "Monitor and assess restroom cleanliness standards.",
+        "PBIS_Video_Step":  "Note: Monitor and assess restroom cleanliness standards.",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "50 printed Trigger Inventory cards placed at counseling desks.",
         "Prep_Recruitment":  "Second Chance Club: Design trigger-management graphics to place on school notice boards.",
@@ -587,13 +606,14 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Teaches concrete tools for regulating overwhelming states. Key concepts: \u0027Attentional Deployment\u0027 (intentionally shifting focus to break a stress loop) and physical grounding techniques.",
         "Student_Tip":  "Attentional deployment is just a fancy term for \u0027distract your brain before you blow up.\u0027 Shift your focus to a physical object, take three slow breaths, and let the initial wave of anger pass. If you want deeper emotional tools, Mr. Lawrence and Mrs. Gray\u0027s DBT Group On-Ramp is open next Wednesday during L-Lab. Sign up at the counseling desk. Check out this quick video on emotional resets: tinyurl.com/DBTMindReset",
+        "Guidance_Program_Action":  "November Guidance Window:\n\n11th Grade: SchooLinks Career Discovery Lesson (Explore Career Center, \"Would You Rather\" Assessment, Star/Save Careers)\n10th Grade: Four Cities Compact Showcase Field Trip\n9-12 Grades: Kindness Week! (Nov. 11 - Kindness pledge, bingo cards, stickers)\n11th \u0026 12th Grades: Presentation on Financial Aid \u0026 FAFSA application (Paying for college after HS with Kent State)\n\nDBT On-Ramp Week",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
-        "State_Required_Video":  "",
-        "TV_Slide_Text":  "Attentional deployment: Distract your brain before you blow up. Shift your focus, breathe, and reset. DBT On-Ramp opens next Wednesday.",
+        "State_Required_Video":  "Tentative Violence  Say Something Prevention \u0026 Anonymous Reporting Video (Mods 5-6)",
+        "TV_Slide_Text":  "Feeling overwhelmed? Tweak your focus: identify three physical objects, breathe, and reset.DBT On-Ramp opens next Wednesday.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Work with your teen to identify their specific emotional \u0027regulators\u0027 — such as physical exercise, writing, or listening to music.",
-        "Staff_Data":  "Encourage students to step out and use the wellness room if they flag themselves as over-triggered.",
+        "Staff_Data":  ": ",
         "PBIS_Video":  "None",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
@@ -612,10 +632,11 @@ const DEFAULT_MATRIX = [
         "Pillar":  "Civil",
         "CASEL_Standard":  "Relationship Skills",
         "Concept_Meaning":  "An immersive, school-wide activation focusing on proactive positivity. Analyzes how committing acts of kindness chemically lowers cortisol levels and builds high social trust across the school.",
-        "Student_Tip":  "Kindness week. I know, suspend your disbelief. We actually want you to write a nice note to someone. No catch, no jokes. Just genuine support. You might just save someone\u0027s day — yes, even that kid who takes the last slice of pizza. Pick up a bingo card at lunch.",
+        "Student_Tip":  "Kindness Week. Look, suspend your cynical disbelief for five minutes. We\u0027re actually asking you to write a genuine, nice note to someone. No hidden agenda, no prank. Just real support. You might literally turn around someone\u0027s terrible week—yes, even that guy who takes the last slice of pizza. Grab a Bingo card at lunch.",
+        "Guidance_Program_Action":  "November Guidance Window: \n\nKindness Week!\n\n11th Grade: SchooLinks Career Discovery Lesson (Explore Career Center, \"Would You Rather\" Assessment, Star/Save Careers)\n10th Grade: Four Cities Compact Showcase Field Trip\n9-12 Grades: Kindness Week! (Nov. 11 - Kindness pledge, bingo cards, stickers)\n11th \u0026 12th Grades: Presentation on Financial Aid \u0026 FAFSA application (Paying for college after HS with Kent State)\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
-        "State_Required_Video":  "Social Inclusion Video (Mods 5-6)",
+        "State_Required_Video":  "Start with Hello-Social Inclusion Video (Mods 5-6)",
         "TV_Slide_Text":  "Copley Kindness Challenge: Fill out a Bingo card, write a nice note, and make someone\u0027s day.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Ask your student about Copley\u0027s Kindness Pledge. Talk about how simple acts of kindness reduce social stress at school.",
@@ -639,10 +660,11 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Deconstructs the algorithm-driven loops designed to trap attention. Empowers students to evaluate screen-time levels and understand how social validation loops impact self-image and interpersonal relationships.",
         "Student_Tip":  "The average teen spends over 7 hours a day looking at social media. Sure, you could use that time to learn a language, build an app, or write a hit album — but hey, someone has to watch that compilation of cats failing at jumps. Just check your screen time statistics and ask yourself: who is actually running the controls?",
+        "Guidance_Program_Action":  "November Guidance Window:\n\n11th Grade: SchooLinks Career Discovery Lesson (Explore Career Center, \"Would You Rather\" Assessment, Star/Save Careers)\n10th Grade: Four Cities Compact Showcase Field Trip\n9-12 Grades: Kindness Week! (Nov. 11 - Kindness pledge, bingo cards, stickers)\n11th \u0026 12th Grades: Presentation on Financial Aid \u0026 FAFSA application (Paying for college after HS with Kent State)\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "The average teen spends over 7 hours a day scrolling. Check your screen time stats. Who is actually running the controls, you or the algorithm?",
+        "TV_Slide_Text":  "7 hours a day scrolling? You could master a skill... or watch cat videos. Check your screen stats: who\u0027s running the controls?",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Compare screen time statistics. Challenge each other: who can cut their daily scroll time by 20% this week? Try setting a solid \u0027no-phone dinner\u0027 boundary.",
         "Staff_Data":  "Discuss technology usage. Highlight the connection between high screen-time levels and student fatigue/stress.",
@@ -665,6 +687,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Social Awareness",
         "Concept_Meaning":  "A complete operational break. Encourages cognitive decompression, intentional family presence, and disconnecting from educational grading pressures.",
         "Student_Tip":  "Take a break. Seriously. Go outside, eat some pie, and leave your Chromebook zipped up in your bag. Let\u0027s pretend for at least 48 hours that school work doesn\u0027t exist. Fully check out and recover. Your brain will thank you.",
+        "Guidance_Program_Action":  "November Guidance Window:\n\n11th Grade: SchooLinks Career Discovery Lesson (Explore Career Center, \"Would You Rather\" Assessment, Star/Save Careers)\n10th Grade: Four Cities Compact Showcase Field Trip\n9-12 Grades: Kindness Week! (Nov. 11 - Kindness pledge, bingo cards, stickers)\n11th \u0026 12th Grades: Presentation on Financial Aid \u0026 FAFSA application (Paying for college after HS with Kent State)\n",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -691,6 +714,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Social Awareness",
         "Concept_Meaning":  "Warns against commercialized expectations. Reframes gratitude as a proactive skill rather than a holiday sentiment. Focuses on altruism — doing something for a peer without expecting external rewards.",
         "Student_Tip":  "The holiday trap is believing that happiness is directly tied to the volume of cardboard boxes you open. It\u0027s not. Authentic wellness comes from proactive generosity. Help out a classmate this week without expecting a prize.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -717,6 +741,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Responsible Decision-Making",
         "Concept_Meaning":  "Cultivates a cognitive bias toward hope. Teaches students how to maintain confidence about their personal futures and trajectories even when immediate grades, relationships, or situations are complicated.",
         "Student_Tip":  "Future-mindedness doesn\u0027t mean writing a perfect 5-year plan — that\u0027s overwhelming. Just aim at something. Pick a target and start moving. Even if you miss it, at least you are moving, and you can\u0027t steer a parked car. Current setbacks are just temporary data loops.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -743,6 +768,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Focuses on closing loops cleanly. Teaches the stress-reducing power of organizing your life before taking a break, ensuring a crisis transition back next semester.",
         "Student_Tip":  "Semester\u0027s almost done. Time to clean out the clutter. Dump out the bottom of your backpack (yes, even that half-eaten granola bar from October), organize your Google Drive, and prep your environment. Future-you will throw a party.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -769,10 +795,11 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Capitalizes on the clean slate phenomenon of the new year. Introduces clear crowd-space, active safety, and respectful engagement standards within the high school commons area.",
         "Student_Tip":  "The Commons. It\u0027s a busy hub, not a campsite. Let\u0027s keep the walkways clear so people can actually walk. Also, if your new year goals include managing stress, our Wednesday DBT Skills Group has onboarding slots open. See Mr. Lawrence or Mrs. Gray at the counseling desk.",
+        "Guidance_Program_Action":  "January/February Course Registration Window:\n\n9th-12th Grades: Scheduling for Next School Year Presentations \u0026 Course Selection Card Collections\n\nDBT On-Ramp Week",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "The Commons is a high-traffic transit zone, not a campsite. Keep walkways clear so your peers can navigate. We trust you can manage your own space without a hallway monitor.",
+        "TV_Slide_Text":  " : The Commons is a high-traffic transit zone, not a campsite. Keep walkways clear so your peers can navigate. We trust you can manage your own space without a hallway monitor.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Discuss new-year resolutions with an emphasis on mental and physical wellness habits.",
         "Staff_Data":  "Play \u0027Video 4: The Commons\u0027 inside your classrooms. Guide students on scheduling registrations.",
@@ -785,6 +812,33 @@ const DEFAULT_MATRIX = [
         "Ryan_Notes":  "TV Slide: I don\u0027t like that. too preachy and they will ignore it. Make it interesting or funny or quotable or sarcastic. Or focus on the self managed or self-awareness part. We don\u0027t need to tell them to clean up after themselves. "
     },
     {
+        "Week":  "20",
+        "Quarter":  "3",
+        "StartDate":  "",
+        "EndDate":  "",
+        "Dates":  "Jan 11 - Jan 15, 2027",
+        "Topic":  "Navigating Academic Pathways \u0026 Course Selection",
+        "Pillar":  "Self-Managed",
+        "CASEL_Standard":  "Responsible Decision-Making",
+        "Concept_Meaning":  "Focuses on evaluating future goals and choosing academic pathways aligned with post-secondary plans rather than peer influence",
+        "Student_Tip":  "Course scheduling for next school year is officially underway. Take time this week to review your graduation requirements and pick courses that actually align with your future goals—not just what your best friend is taking.",
+        "Guidance_Program_Action":  "January/February Course Registration Window:\n\n9th-12th Grades: Scheduling for Next School Year Presentations \u0026 Course Selection Card Collections",
+        "Incentive_Alert":  "",
+        "Link_Crew_Prompt":  "",
+        "State_Required_Video":  "",
+        "TV_Slide_Text":  "",
+        "TV_Slide_Approved":  "",
+        "Family_Prompt":  "",
+        "Staff_Data":  "",
+        "PBIS_Video":  "Optional Email Link: Arrival \u0026 Dismissal",
+        "PBIS_Video_Step":  "",
+        "Is_Blackout":  "",
+        "Prep_Supplies":  "",
+        "Prep_Recruitment":  "",
+        "Prep_Slide_Spec":  "",
+        "Ryan_Notes":  ""
+    },
+    {
         "Week":  "21",
         "Quarter":  "3",
         "StartDate":  "2027-01-19",
@@ -795,6 +849,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Relationship Skills",
         "Concept_Meaning":  "Focuses on civic responsibility in everyday social circles. Teaches active inclusion — seeking out peers who sit alone or are struggling to integrate, which builds a healthy school community.",
         "Student_Tip":  "Inclusion. It\u0027s really just making sure no one sits alone looking at their lap feeling awkward. Try a basic conversation opener: \"Hey, what class did you just have?\" It\u0027s remarkably effective and low-risk.",
+        "Guidance_Program_Action":  "January/February Course Registration Window:\n\n9th-12th Grades: Scheduling for Next School Year Presentations \u0026 Course Selection Card Collections",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -821,6 +876,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Social Awareness",
         "Concept_Meaning":  "Moves beyond simple politeness to teach perspective taking. Encourages students to realize that poor peer behavior is often a reaction to silent personal struggles, allowing for constructive conflict resolution.",
         "Student_Tip":  "Active empathy is just remembering that people are usually fighting silent battles you know absolutely nothing about. So when someone snaps or cuts you off in the hallway, cut them some slack. It\u0027s not always about you.",
+        "Guidance_Program_Action":  "January/February Course Registration Window:\n\n9th-12th Grades: Scheduling for Next School Year Presentations \u0026 Course Selection Card Collections",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -828,7 +884,7 @@ const DEFAULT_MATRIX = [
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Discuss perspective taking. Ask: \u0027When someone acts out at school or work, what silent struggles might they be dealing with?\u0027",
         "Staff_Data":  "Model active listening during student conferences. Support peer-to-peer conflict resolution efforts.",
-        "PBIS_Video":  "None",
+        "PBIS_Video":  "Optional Video Link: The Bus",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Scenario worksheets for L-Lab.",
@@ -847,10 +903,11 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Relationship Skills",
         "Concept_Meaning":  "Examines behavioral standards in unsupervised school zones. Explains that integrity means maintaining a civil standard of behavior because it reflects who you are, not because you are being monitored.",
         "Student_Tip":  "The hallways are transit zones, not living rooms. Standing in a massive circle in the middle of a doorway is a bold social statement, but it makes navigation a nightmare. Keep to the right, keep moving, and let\u0027s avoid hallway traffic jams.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "The hallways are highways, not parking lots. Keep to the right, keep moving, and respect individual space.",
+        "TV_Slide_Text":  " : The hallways are highways, not parking lots. Keep to the right, keep moving, and respect individual space.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Ask your student: \u0027If Copley hallways had traffic laws, what is the number one violation people commit during transitions?\u0027",
         "Staff_Data":  "Project \u0027Video 5: Hallway Conduct\u0027 in advisories. Help keep hallway doors clear during transitions.",
@@ -873,6 +930,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Focuses on mastering internal resistance. Discusses executive functioning techniques to combat mental blocks, get through high-difficulty coursework, and avoid distraction traps.",
         "Student_Tip":  "Stop letting notifications run your day. Tweak your boundaries: put your phone on do-not-disturb, close the 47 open tabs on your Chromebook, and clear your workload early. Focus is a superpower.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -899,6 +957,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Responsible Decision-Making",
         "Concept_Meaning":  "Guides students through analyzing ethical choices. Focuses on peer pressure dynamics, explaining that standing up for honorable principles can feel uncomfortable initially but builds lasting self-respect and character.",
         "Student_Tip":  "Integrity is doing the right thing when you\u0027re 100% positive no one is looking. Copying homework or letting an AI write your essay is an easy shortcut — but it also proves you don\u0027t trust your own brain. Value your character over a lazy copy-paste.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -925,6 +984,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Explores the concept of grit. It defines grit not as a talent, but as a system of persistent work that embraces mistakes and views setbacks as normal feedback loops rather than personal failures.",
         "Student_Tip":  "Grit is falling in love with boring consistency. It\u0027s trying, failing, feeling stupid, and showing up again anyway. Talent is cool, but relentless persistence is what actually changes the board.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -932,7 +992,7 @@ const DEFAULT_MATRIX = [
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Praise your child\u0027s persistence. Ask: \u0027What task felt completely impossible initially but is now becoming second nature?\u0027",
         "Staff_Data":  "Acknowledge persistence. Reach out to the counseling office to flag students who are emotionally struggling.",
-        "PBIS_Video":  "None",
+        "PBIS_Video":  "Optional Video Link: Restroom",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Spotlight logs and teacher interview sheets.",
@@ -951,6 +1011,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "An interactive, practical school-wide alignment designed to build executive functioning skills. Investigates the science of why we delay work (emotional discomfort, fear of failure, perfectionism) and offers concrete solutions.",
         "Student_Tip":  "Procrastination is my absolute favorite sport. Why start your paper today when you can pull an all-nighter sobbing at 2:00 AM on Sunday? Stop doing this to your nervous system. Try the 5-Minute Rule: work on it for five minutes. If you still hate it, stop. Usually, you\u0027ll keep going.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -977,6 +1038,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Encourages a complete pause to restore mental and physical energy. Emphasizes sleep hygiene, getting outside, and digital boundaries to recover from academic demands.",
         "Student_Tip":  "Spring Break is here. Shut down the Chromebook, ignore Google Classroom, and go do something that doesn\u0027t involve a screen. We want you to fully check out. If you find yourself checking grades over break, please seek help. Have a great week.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -984,7 +1046,7 @@ const DEFAULT_MATRIX = [
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Enjoy restful times together. Unplug from standard routines to focus on family fun and quality presence.",
         "Staff_Data":  "Blackout week. Enjoy your spring break! Absolutely no emails or standard tasks are permitted.",
-        "PBIS_Video":  "None",
+        "PBIS_Video":  "Optional Video Link: The commons",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "TRUE",
         "Prep_Supplies":  "None.",
@@ -1003,10 +1065,11 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Awareness",
         "Concept_Meaning":  "Initiates the post-secondary legacy phase. Guides students through understanding standard classroom expectations that support teachers, minimize distractions, and maximize direct academic engagement.",
         "Student_Tip":  "The classroom is technically a professional workspace, not your personal lounge. We know the temptation to check your notifications every 4 seconds is overwhelming. But try keeping your phone zipped in your bag (yes, even if your dog is texting you) and see what happens. Your teachers are humans too; show them some basic civil respect. Also, the final DBT Group starts next Wednesday. Talk to Mr. Lawrence or Mrs. Gray.",
+        "Guidance_Program_Action":  "DBT On-Ramp Week",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
-        "TV_Slide_Text":  "The classroom is a professional workspace, not a personal lounge. Zip the phone away (even if your dog is texting). Respect your teachers — they are humans too.",
+        "TV_Slide_Text":  " : The classroom is a professional workspace, not a personal lounge. Zip the phone away (even if your dog is texting). Respect your teachers — they are humans too.",
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Look at the \u0027Futuristic\u0027 Parent Guide. Talk about upcoming post-high school transition options with optimism.",
         "Staff_Data":  "Project \u0027Video 6: The Classroom\u0027 during advisories. Reinforce standard focus protocols.",
@@ -1029,6 +1092,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Responsible Decision-Making",
         "Concept_Meaning":  "Focuses on career ethics. Teaches students how eye contact, professional greetings, and dependability act as invaluable professional tools that open future doors.",
         "Student_Tip":  "Professionalism is a dry word, but it\u0027s really just the art of looking like you know what you\u0027re doing. Standing tall, making real eye contact, and showing up when you said you would opens doors you can\u0027t even see yet.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1055,6 +1119,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Teaches career mechanics. Discusses building clear, professional resumes, communicating skills effectively, and following up professionally.",
         "Student_Tip":  "Getting hired is simple: show up, prove you can solve a problem, and be dependable. Write a resume that doesn\u0027t put the recruiter to sleep — keep it clean and punchy. When you get a chance, you might want to update your SchooLinks profile to see where your path leads.",
+        "Guidance_Program_Action":  "April Guidance Window:\n\n11th Grade: SchooLinks \"Learning After High School\" Lesson Plan (Update Profile/Resume, \"Campus Lifestyle\" Assessment, \"Top Skills\" Assessment, SchooLinks Learning Hub options)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1081,6 +1146,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Directly addresses the seasonal decline in focus. Teaches strategies for maintaining routines, pacing academic work, and resisting distraction as the school year winds down.",
         "Student_Tip":  "Spring Fever. The ultimate focus-shredder. We know it\u0027s nice outside and you want to crawl out a window. But check out early, and you\u0027ll get the glorious opportunity to retake the exact same class in summer school. Let\u0027s avoid that sequel. Finish the race.",
+        "Guidance_Program_Action":  "April Guidance Window:\n\n11th Grade: SchooLinks \"Learning After High School\" Lesson Plan (Update Profile/Resume, \"Campus Lifestyle\" Assessment, \"Top Skills\" Assessment, SchooLinks Learning Hub options)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1088,7 +1154,7 @@ const DEFAULT_MATRIX = [
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Help your student stay accountable to their routines even as warm weather increases distractions.",
         "Staff_Data":  "Keep learning activities hands-on and highly collaborative to maintain student focus.",
-        "PBIS_Video":  "None",
+        "PBIS_Video":  "Optional Video Link: Hallways",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "Advisory progress audit templates.",
@@ -1107,6 +1173,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Social Awareness",
         "Concept_Meaning":  "Explores the essence of leadership. Clarifies that leadership is not about a title, but taking responsibility for supporting peers, building inclusive spaces, and serving others.",
         "Student_Tip":  "True leadership isn\u0027t about looking important on social media. It\u0027s about taking responsibility for the people around you. As Arnold Glasow said: \u0027A good leader takes a little more than his share of the blame, and a little less than his share of the credit.\u0027 How can you support someone this week?",
+        "Guidance_Program_Action":  "April Guidance Window:\n\n11th Grade: SchooLinks \"Learning After High School\" Lesson Plan (Update Profile/Resume, \"Campus Lifestyle\" Assessment, \"Top Skills\" Assessment, SchooLinks Learning Hub options)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1133,6 +1200,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Self-Management",
         "Concept_Meaning":  "Provides cognitive tools for managing testing anxiety. Teaches students how to keep perspective during state testing, reminding them that scores measure performance, not human worth.",
         "Student_Tip":  "State tests. Highly exciting, right? Let\u0027s clarify: a test score is an evaluation of a specific paper on a specific day. It is not an evaluation of your human soul. Keep some perspective, take a long breath, and do your best.",
+        "Guidance_Program_Action":  "April Guidance Window:\n\n11th Grade: SchooLinks \"Learning After High School\" Lesson Plan (Update Profile/Resume, \"Campus Lifestyle\" Assessment, \"Top Skills\" Assessment, SchooLinks Learning Hub options)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1159,6 +1227,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Relationship Skills",
         "Concept_Meaning":  "Promotes systematic gratitude. Teaches that acknowledging the contributions of peers, teachers, and staff is a sign of high character and strengthens the entire school community.",
         "Student_Tip":  "Nobody makes it through life on an island. Write a quick thank-you note to a teacher or peer who kept you from losing your mind this semester. Yes, a real paper card. It actually matters.",
+        "Guidance_Program_Action":  "April Guidance Window:\n\n11th Grade: SchooLinks \"Learning After High School\" Lesson Plan (Update Profile/Resume, \"Campus Lifestyle\" Assessment, \"Top Skills\" Assessment, SchooLinks Learning Hub options)",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1166,7 +1235,7 @@ const DEFAULT_MATRIX = [
         "TV_Slide_Approved":  "No",
         "Family_Prompt":  "Discuss the power of gratitude. Have your child express gratitude to someone outside of immediate family circles.",
         "Staff_Data":  "Model reciprocal appreciation across building teams. Celebrate key achievements of support staff.",
-        "PBIS_Video":  "None",
+        "PBIS_Video":  "Optional Video Link: the classroom",
         "PBIS_Video_Step":  "None",
         "Is_Blackout":  "FALSE",
         "Prep_Supplies":  "300 Thank-You cards and pens for the Commons tables.",
@@ -1185,6 +1254,7 @@ const DEFAULT_MATRIX = [
         "CASEL_Standard":  "Responsible Decision-Making",
         "Concept_Meaning":  "The final synthesis of the school year. Guides seniors and underclassmen through reflecting on their personal growth, urging them to carry their Civil, Honorable, and Self-Managed habits into the future.",
         "Student_Tip":  "The exit door is practically in sight. Whether you have another year here or are transitioning onward, remember Mark Twain\u0027s advice: ‘I have never let my schooling interfere with my education.’ Carry the habits of being Civil, Honorable, and Self-Managed into your summer. Try not to break anything.",
+        "Guidance_Program_Action":  "",
         "Incentive_Alert":  "",
         "Link_Crew_Prompt":  "",
         "State_Required_Video":  "",
@@ -1200,8 +1270,7 @@ const DEFAULT_MATRIX = [
         "Prep_Slide_Spec":  "Summer graphic: ‘I have never let my schooling interfere with my education.’ — Mark Twain. Have a safe and self-managed summer!",
         "Ryan_Notes":  "usually seniors are done by this point. I think they are done a week or two eariler than the rest of the student body. Maybe something a bit more relevant to the full student body since the seniors probably won\u0027t even read this one. More sarcasm or a good quote. Slide text isn\u0027t great either. Boring. \"Make us proud\" is not really a good fit. "
     }
-]
-;
+];
 
 
     // Behavior Matrix Data (CHS Cultural Pillars)
@@ -1257,6 +1326,8 @@ const DEFAULT_MATRIX = [
         stateRequiredVideo: m.State_Required_Video || m.stateRequiredVideo || '',
         pbisVideo: m.PBIS_Video || m.pbisVideo || '',
         pbisVideoStep: m.PBIS_Video_Step || m.pbisVideoStep || '',
+        guidanceProgramAction: m.Guidance_Program_Action || m.guidanceProgramAction || '',
+        tvSlideText: m.TV_Slide_Text || m.tvSlideText || '',
         isDbtWeek: DBT_WEEKS.includes(wNum)
       };
     });
@@ -1264,6 +1335,16 @@ const DEFAULT_MATRIX = [
     let activeWeekData = matrixData[0];
     let selectedQuarter = 'all';
     let filterDbtOnly = false;
+
+    // Helper to extract first clean line of Guidance Action
+    function getGuidanceSummary(str) {
+      if (!str) return '';
+      const lines = str.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+      if (lines.length === 0) return '';
+      let first = lines[0].replace(/^[-â€¢*]\s*/, '');
+      if (first.length > 110) first = first.substring(0, 107) + '...';
+      return first;
+    }
 
     // Render Grid
     function renderGrid() {
@@ -1274,7 +1355,7 @@ const DEFAULT_MATRIX = [
         if (filterDbtOnly && !item.isDbtWeek) return false;
         if (selectedQuarter !== 'all' && item.quarter != selectedQuarter) return false;
         if (searchVal) {
-          const text = `${item.week} ${item.topic} ${item.pillar} ${item.casel} ${item.studentTip} ${item.staffData}`.toLowerCase();
+          const text = `${item.week} ${item.topic} ${item.pillar} ${item.casel} ${item.meaning} ${item.studentTip} ${item.guidanceProgramAction} ${item.staffData}`.toLowerCase();
           if (!text.includes(searchVal)) return false;
         }
         return true;
@@ -1288,39 +1369,48 @@ const DEFAULT_MATRIX = [
       grid.innerHTML = filtered.map(item => {
         const isActive = activeWeekData && activeWeekData.week === item.week;
         const pillarColor = item.pillar === 'Civil' ? 'bg-copley-blue text-copley-gold' : (item.pillar === 'Honorable' ? 'bg-copley-gold text-copley-blue' : 'bg-emerald-800 text-white');
+        const gSummary = getGuidanceSummary(item.guidanceProgramAction);
 
         return `
           <div onclick="openWeekModal(${item.week})" class="bg-white rounded-3xl p-5 border ${isActive ? 'border-emerald-500 ring-2 ring-emerald-500/20 bg-emerald-50/20' : 'border-slate-200/80'} shadow-sm hover:shadow-md transition space-y-3 flex flex-col justify-between cursor-pointer group">
-            <div class="space-y-2">
+            <div class="space-y-2.5">
               <div class="flex justify-between items-start flex-wrap gap-2">
                 <div>
-                  <span class="text-[10px] font-black uppercase tracking-wider text-slate-400">Week ${item.week} &bull; Q${item.quarter} ${item.dates ? ' (' + item.dates + ')' : ''}</span>
+                  <span class="text-[10px] font-black uppercase tracking-wider text-slate-400">Week ${item.week} â€¢ Q${item.quarter}${item.dates ? ' (' + item.dates + ')' : ''}</span>
                   <h3 class="text-base font-black text-slate-900 font-heading leading-tight group-hover:text-copley-blue transition">${item.topic || 'General SEL Focus'}</h3>
                 </div>
                 ${isActive ? '<span class="bg-emerald-600 text-white text-[9px] font-black uppercase px-2.5 py-1 rounded-full shadow-sm">Active Week</span>' : ''}
               </div>
 
-              <div class="flex gap-1.5 flex-wrap pt-1">
+              <!-- High-Visibility Guidance Program Action Banner (if active for this week) -->
+              ${gSummary ? `
+                <div class="bg-amber-50/90 p-2.5 rounded-xl border border-amber-200/80 text-[11px] font-bold text-amber-950 flex items-start gap-2 shadow-xs">
+                  <i class="fa-solid fa-compass text-amber-600 text-xs mt-0.5 shrink-0"></i>
+                  <div class="line-clamp-2">
+                    <strong class="text-amber-950 uppercase text-[9px] font-black tracking-wider block">Guidance Action:</strong>
+                    <span>${gSummary}</span>
+                  </div>
+                </div>
+              ` : ''}
+
+              <div class="flex gap-1.5 flex-wrap pt-0.5">
                 <span class="${pillarColor} text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider">${item.pillar}</span>
                 ${item.casel ? `<span class="bg-slate-100 text-slate-700 text-[9px] font-bold px-2.5 py-1 rounded-lg">${item.casel}</span>` : ''}
                 ${item.pbisVideo ? `<span class="bg-copley-blue/10 text-copley-blue text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1"><i class="fa-solid fa-video text-[8px]"></i> ${item.pbisVideo.split(':')[0]}</span>` : ''}
                 ${item.stateRequiredVideo ? `<span class="bg-rose-100 text-rose-800 text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1"><i class="fa-solid fa-shield-halved text-[8px]"></i> Safety Video</span>` : ''}
-                ${item.isDbtWeek ? `<span class="bg-amber-400 text-slate-950 text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1 shadow-sm"><i class="fa-solid fa-brain text-[8px]"></i> DBT On-Ramp</span>` : ''}
+                ${item.isDbtWeek ? `<span class="bg-amber-400 text-slate-950 text-[9px] font-black px-2.5 py-1 rounded-lg uppercase tracking-wider flex items-center gap-1 shadow-xs"><i class="fa-solid fa-brain text-[8px]"></i> DBT On-Ramp</span>` : ''}
               </div>
 
-              ${item.studentTip ? `
+              <!-- Concept Meaning featured on Card Tile (Replaced Student Tip on Front) -->
+              ${item.meaning ? `
                 <div class="bg-slate-50 p-3 rounded-2xl border border-slate-100 text-xs text-slate-700 font-medium line-clamp-3">
-                  <strong class="text-copley-blue">Student Tip:</strong> ${item.studentTip}
+                  <strong class="text-copley-blue">Concept Focus:</strong> ${item.meaning}
                 </div>
-              ` : ''}
-
-              ${item.staffData ? `
-                <p class="text-[11px] text-slate-500 italic pt-1 line-clamp-2"><strong>Staff Note:</strong> ${item.staffData}</p>
               ` : ''}
             </div>
 
             <div class="pt-3 border-t border-slate-100 flex justify-between items-center text-xs font-bold text-copley-blue">
-              <span>View Guidance Specs</span>
+              <span>View Full Guidance Specs</span>
               <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
             </div>
           </div>
@@ -1347,15 +1437,15 @@ const DEFAULT_MATRIX = [
       }
 
       titleEl.textContent = `Week ${activeWeekData.week}: ${activeWeekData.topic || 'SEL Focus'}`;
-      datesEl.textContent = activeWeekData.dates ? `Dates: ${activeWeekData.dates} &bull; Quarter ${activeWeekData.quarter}` : `Quarter ${activeWeekData.quarter}`;
-      tipEl.textContent = activeWeekData.studentTip ? `"${activeWeekData.studentTip}"` : (activeWeekData.meaning || 'Curriculum focus active.');
+      datesEl.textContent = activeWeekData.dates ? `Dates: ${activeWeekData.dates} â€¢ Quarter ${activeWeekData.quarter}` : `Quarter ${activeWeekData.quarter}`;
+      tipEl.textContent = activeWeekData.meaning ? `"${activeWeekData.meaning}"` : (activeWeekData.studentTip || 'Curriculum focus active.');
 
       if (dbtBadge) {
         if (activeWeekData.isDbtWeek) dbtBadge.classList.remove('hidden');
         else dbtBadge.classList.add('hidden');
       }
 
-      if (activeWeekData.stateRequiredVideo) {
+      if (activeWeekData.stateRequiredVideo && (activeWeekData.stateRequiredVideo.startsWith('http') || activeWeekData.stateRequiredVideo.startsWith('www'))) {
         videoBtn.href = activeWeekData.stateRequiredVideo;
         videoArea.classList.remove('hidden');
       } else {
@@ -1371,13 +1461,23 @@ const DEFAULT_MATRIX = [
       const item = matrixData.find(m => m.week == wNum);
       if (!item) return;
 
-      document.getElementById('modalWeekBadge').textContent = `Week ${item.week} &bull; Q${item.quarter} &bull; ${item.pillar}`;
+      document.getElementById('modalWeekBadge').textContent = `Week ${item.week} â€¢ Q${item.quarter} â€¢ ${item.pillar}`;
       document.getElementById('modalDates').textContent = item.dates ? `Dates: ${item.dates}` : '';
       document.getElementById('modalTopic').textContent = item.topic || 'General Focus';
       document.getElementById('modalStudentTip').textContent = item.studentTip || 'No student tip set.';
       document.getElementById('modalStaffData').textContent = item.staffData || 'No staff parameters set.';
       document.getElementById('modalFamilyPrompt').textContent = item.familyPrompt || 'No family prompt set.';
       document.getElementById('modalPrepSupplies').textContent = item.prepSupplies || 'None specified.';
+
+      // Guidance Action Section in Modal
+      const modalGuidanceSection = document.getElementById('modalGuidanceSection');
+      const modalGuidanceText = document.getElementById('modalGuidanceText');
+      if (item.guidanceProgramAction) {
+        modalGuidanceText.textContent = item.guidanceProgramAction;
+        if (modalGuidanceSection) modalGuidanceSection.classList.remove('hidden');
+      } else {
+        if (modalGuidanceSection) modalGuidanceSection.classList.add('hidden');
+      }
 
       // Videos section
       const videosSection = document.getElementById('modalVideosSection');
@@ -1390,7 +1490,13 @@ const DEFAULT_MATRIX = [
       let hasVideo = false;
 
       if (item.stateRequiredVideo) {
-        stateLink.href = item.stateRequiredVideo;
+        if (item.stateRequiredVideo.startsWith('http') || item.stateRequiredVideo.startsWith('www')) {
+          stateLink.href = item.stateRequiredVideo;
+          stateLink.classList.remove('pointer-events-none', 'opacity-50');
+        } else {
+          stateLink.removeAttribute('href');
+          stateLink.classList.add('pointer-events-none', 'opacity-50');
+        }
         stateBox.classList.remove('hidden');
         hasVideo = true;
       } else {
